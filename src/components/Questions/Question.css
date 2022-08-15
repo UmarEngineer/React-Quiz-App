@@ -1,0 +1,144 @@
+body {
+  background-image: url("../../images/mohammad-alizade-(1).jpg");
+  background-position: center;
+}
+
+.select {
+  background-color: #b3b3b3;
+}
+
+.question {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* margin-top: 10vh; */
+  padding: 40px;
+}
+
+.question-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.question-items {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  padding: 40px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.question-text {
+  font-size: 18px;
+  width: 60%;
+  padding: 20px;
+  height: 300px;
+  display: flex;
+  color: white;
+  align-items: center;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: #002b5b;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.correct {
+  background-color: #28a745;
+  color: white;
+}
+
+.wrong {
+  background-color: #dc3545;
+  color: white;
+}
+
+.score {
+  margin: 20px;
+  font-size: 24px;
+  color: #dc3545;
+}
+
+.correct-score {
+  color: #28a745;
+  font-weight: 700;
+}
+
+.question-actions {
+  margin-top: 20px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+}
+
+.question-actions > button {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+}
+
+.question-actions > button:active {
+  transform: scale(0.97);
+}
+
+.prev-action {
+  background-color: #007bff;
+}
+
+.submit-action {
+  background-color: #28a745;
+}
+.next-action {
+  background-color: #dc3545;
+}
+
+@media screen and (max-width: 800px) {
+  .question-top {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .question-items {
+    flex-direction: column;
+    width: 100%;
+    row-gap: 20px;
+    padding: 15px;
+  }
+
+  .question-items > div {
+    width: 100%;
+  }
+
+  .question-text {
+    height: auto;
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .question-items,
+  .question {
+    padding: 5px;
+  }
+
+  .question-text {
+    padding: 10px;
+  }
+
+  .retry.top {
+    margin-top: 70px;
+  }
+}

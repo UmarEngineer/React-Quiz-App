@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import axios from "axios";
+import { useState } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Start from "./Pages/Start/Start";
+import Content from "./Pages/Content/Content";
 
-function App() {
+const App = () => {
+  const [questions, setQuestions] = useState("Yuklanyabdi...");
+
+  const getUsers = async (amount = "", category = "") => {
+    try {
+      const { data } = await axios.get(
+        `https://opentdb.com/api.php?amount=${amount}&category=${category}&difficulty=medium&type=multiple`
+      );
+      setQuestions(data.results);
+    } catch (error) {
+      console.error(error);
+    }
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" exact element={<Start getUsers={getUsers} />} />
+
+        <Route
+          path="/content"
+          element={
+            <Content questions={questions} setQuestions={setQuestions} />
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;

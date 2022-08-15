@@ -1,0 +1,77 @@
+.start {
+  margin-top: 15vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start-main {
+  max-width: 600px;
+  height: 420px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 40px;
+  border-radius: 16px;
+  background: rgba(9, 18, 59, 0.103);
+  box-shadow: 0 4px 4px 0 rgba(17, 21, 71, 0.699);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.start-text {
+  color: #ffffde;
+  text-align: center;
+}
+
+.test-amount {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#son-label,
+#tur-label {
+  font-size: 18px;
+  margin-top: 20px;
+}
+#son,
+#tur {
+  margin-top: 8px;
+  font-size: 16px;
+  border: none;
+  height: 32px;
+  border-radius: 8px;
+}
+
+.test-type {
+  display: flex;
+  flex-direction: column;
+}
+
+.start-action {
+  border: 0px;
+  max-width: 140px;
+  height: 38px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: #007bff;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+}
+
+.start-action:active {
+  transform: scale(0.95);
+}
+
+.error {
+  margin-top: 20px;
+  color: red;
+  text-align: center;
+  padding-bottom: 20px;
+}

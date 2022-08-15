@@ -1,0 +1,21 @@
+.question-variants {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  width: 30%;
+  justify-content: space-around;
+}
+.variant {
+  min-height: 40px;
+  border-radius: 8px;
+  border: none;
+  font-size: 18px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .question-variants {
+    margin-left: 0;
+    row-gap: 10px;
+  }
+}

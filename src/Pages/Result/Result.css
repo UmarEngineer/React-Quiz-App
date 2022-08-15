@@ -1,0 +1,42 @@
+.answer {
+  width: 70%;
+  /* height: 40vh; */
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 30vh;
+  color: wheat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 24px;
+  flex-direction: column;
+  backdrop-filter: blur(15px) saturate(150%);
+  -webkit-backdrop-filter: blur(15px) saturate(150%);
+  background-color: rgba(7, 82, 219, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.retry {
+  width: 120px;
+  padding: 10px;
+  margin-right: 10px;
+  margin-top: 30px;
+  background-color: #007bff;
+  border-radius: 8px;
+  color: white;
+  border: none;
+}
+
+.retry.top {
+  margin-top: 0;
+}
+
+.retry.ok {
+  background-color: #28a745;
+}
+
+.retry:active {
+  transform: scale(0.95);
+}

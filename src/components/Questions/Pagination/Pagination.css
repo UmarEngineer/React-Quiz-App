@@ -1,0 +1,39 @@
+.question-pagination {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.paginationBtn {
+  border: 0.5px solid #242424;
+  width: 40px;
+  height: 40px;
+  color: black;
+  background-color: white;
+  border: none;
+  margin: 1px;
+  border-radius: 4px;
+}
+
+.activeBtn {
+  background-color: #007bff;
+  color: white;
+}
+
+.correct {
+  background-color: #28a745;
+  color: white;
+}
+
+.wrong {
+  background-color: #dc3545;
+  color: white;
+}
+
+.question-endaction {
+  padding: 10px;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 8px;
+  opacity: 0.9;
+  color: white;
+}
