@@ -134,6 +134,13 @@ const Question = ({
     }
   };
 
+  const handleEndTest = () => {
+    setAlert(true)
+    if(selectedList.length === questions.length){
+      setShowScore(true);
+    }
+  }
+
   return (
     <div>
       {alert ? (
@@ -167,7 +174,7 @@ const Question = ({
 
               <button
                 className="question-endaction"
-                onClick={() => setAlert(true)}
+                onClick={handleEndTest}
               >
                 Testni yakunlash
               </button>
