@@ -30,10 +30,18 @@
 }
 
 .question-endaction {
+  width: 120px;
   padding: 10px;
   background-color: #dc3545;
   border: none;
   border-radius: 8px;
   opacity: 0.9;
   color: white;
+  margin-left: 10px;
+}
+
+@media screen and (max-width:800px){
+  .question-endaction{
+    margin-left: 50px;
+  }
 }

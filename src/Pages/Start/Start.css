@@ -43,7 +43,7 @@
   font-size: 16px;
   border: none;
   height: 32px;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .test-type {
@@ -74,4 +74,14 @@
   color: red;
   text-align: center;
   padding-bottom: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .start{
+    margin-top: 5vh;
+  }
+
+  .start-main{
+    height: 510px;
+  }
 }
